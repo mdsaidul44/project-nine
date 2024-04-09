@@ -1,9 +1,12 @@
-import { Outlet } from "react-router-dom"; 
+import { Outlet } from "react-router-dom";
+import Footer from "./Pages/Footer/Footer";
 const Root = () => {
     return (
         <div>
-            <h1>This is outlet</h1>
-            <Outlet/>
+            <div className="lg:m-10">
+                <Outlet />
+            </div>
+            <Footer/>
         </div>
     );
 };
