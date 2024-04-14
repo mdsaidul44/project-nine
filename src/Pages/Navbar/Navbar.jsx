@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
 
     const navLink = <>
-        <Link to="/"><a>Home</a></Link>
-        <Link to='/register' ><a>Register</a></Link>
-        <Link to='/login'><a>Login</a></Link>
+        <Link to="/"><a>Home</a></Link> 
         <Link to='/details'><a>View Details</a></Link>
         <Link to='/about'><a>About</a></Link>
         <Link to='/contact'><a>Contact</a></Link>
@@ -29,8 +27,12 @@ const Navbar = () => {
                     {navLink}
                 </ul>
             </div>
-            <div className="navbar-end">
-                <div className="dropdown dropdown-end">
+            <div className="navbar-end"> 
+            <div className="ml-4 sm:flex" >
+                <Link to='/login'><a className="btn">Log In</a></Link>
+                <Link to='/register'><a className="btn ml-2">Sign In</a></Link>
+            </div>
+            <div className="dropdown dropdown-end ml-2">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
                             <img alt="Tailwind CSS Navbar component" src="https://i.ibb.co/09CxQmr/unnamed.png" />
@@ -44,9 +46,6 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-            <div className="ml-4">
-                <a className="btn">Login</a>
-            </div>
             </div>
         </div>
     );

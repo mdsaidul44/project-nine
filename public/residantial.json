@@ -1,0 +1,80 @@
+[
+    {
+        "id": "1",
+        "title": "Beautiful Family Home",
+        "segment_name": "Single Family Homes",
+        "description": "Nestled in the heart of a serene suburban neighborhood, this exquisite family villa offers the epitome of luxurious living. With a meticulously crafted design and an array of upscale amenities, this home is tailored to meet the needs of modern families seeking comfort, convenience, and elegance. over 5,000 square feet of living space, this stunning residence boasts five spacious bedrooms, each with its own en-suite bathroom, providing ample privacy and comfort for every member of the household. The master suite is a sanctuary of relaxation, featuring a lavish bathroom with a spa-like soaking tub and a private balcony overlooking the lush landscaped gardens.The heart of the home is the expansive open-plan living area, characterized by soaring ceilings, sleek hardwood floors, and an abundance of natural light streaming in through large windows. The gourmet kitchen is a chef's delight, equipped with top-of-the-line stainless steel appliances, custom cabinetry, and a center island with seating, perfect for casual dining and entertaining guestsStep outside into the backyard oasis, where you'll find a resort-style swimming pool surrounded by lush foliage, creating a private retreat for outdoor relaxation and recreation.",
+        "price": 50000,
+        "stats": [3,2],
+        "area":2500,
+        "location":"United stats",
+        "facilities": [ "living room","swimming pool","kitchen"],
+        "image": "https://example.com/image.jpg",
+        "view_property_btn": "https://example.com/view_property"
+    },
+    {
+        "id": "1",
+        "title": "Beautiful Family Home",
+        "segment_name": "Townhouses",
+        "description": "Nestled in the heart of a serene suburban neighborhood, this exquisite family villa offers the epitome of luxurious living. With a meticulously crafted design and an array of upscale amenities, this home is tailored to meet the needs of modern families seeking comfort, convenience, and elegance. over 5,000 square feet of living space, this stunning residence boasts five spacious bedrooms, each with its own en-suite bathroom, providing ample privacy and comfort for every member of the household. The master suite is a sanctuary of relaxation, featuring a lavish bathroom with a spa-like soaking tub and a private balcony overlooking the lush landscaped gardens.The heart of the home is the expansive open-plan living area, characterized by soaring ceilings, sleek hardwood floors, and an abundance of natural light streaming in through large windows. The gourmet kitchen is a chef's delight, equipped with top-of-the-line stainless steel appliances, custom cabinetry, and a center island with seating, perfect for casual dining and entertaining guestsStep outside into the backyard oasis, where you'll find a resort-style swimming pool surrounded by lush foliage, creating a private retreat for outdoor relaxation and recreation.",
+        "price": 50000,
+        "stats": ["rent", "seal"],
+        "area":2500,
+        "location":"United stats",
+        "facilities": [ "living room","swimming pool","kitchen"],
+        "image": "https://example.com/image.jpg",
+        "view_property_btn": "https://example.com/view_property"
+    },
+    {
+        "id": "1",
+        "title": "Beautiful Family Home",
+        "segment_name": "Single Family Homes",
+        "description": "Nestled in the heart of a serene suburban neighborhood, this exquisite family villa offers the epitome of luxurious living. With a meticulously crafted design and an array of upscale amenities, this home is tailored to meet the needs of modern families seeking comfort, convenience, and elegance. over 5,000 square feet of living space, this stunning residence boasts five spacious bedrooms, each with its own en-suite bathroom, providing ample privacy and comfort for every member of the household. The master suite is a sanctuary of relaxation, featuring a lavish bathroom with a spa-like soaking tub and a private balcony overlooking the lush landscaped gardens.The heart of the home is the expansive open-plan living area, characterized by soaring ceilings, sleek hardwood floors, and an abundance of natural light streaming in through large windows. The gourmet kitchen is a chef's delight, equipped with top-of-the-line stainless steel appliances, custom cabinetry, and a center island with seating, perfect for casual dining and entertaining guestsStep outside into the backyard oasis, where you'll find a resort-style swimming pool surrounded by lush foliage, creating a private retreat for outdoor relaxation and recreation.",
+        "price": 50000,
+        "stats": [3,2],
+        "area":2500,
+        "location":"United stats",
+        "facilities": [ "living room","swimming pool","kitchen"],
+        "image": "https://example.com/image.jpg",
+        "view_property_btn": "https://example.com/view_property"
+    },
+    {
+        "id": "1",
+        "title": "Beautiful Family Home",
+        "segment_name": "Single Family Homes",
+        "description": "Nestled in the heart of a serene suburban neighborhood, this exquisite family villa offers the epitome of luxurious living. With a meticulously crafted design and an array of upscale amenities, this home is tailored to meet the needs of modern families seeking comfort, convenience, and elegance. over 5,000 square feet of living space, this stunning residence boasts five spacious bedrooms, each with its own en-suite bathroom, providing ample privacy and comfort for every member of the household. The master suite is a sanctuary of relaxation, featuring a lavish bathroom with a spa-like soaking tub and a private balcony overlooking the lush landscaped gardens.The heart of the home is the expansive open-plan living area, characterized by soaring ceilings, sleek hardwood floors, and an abundance of natural light streaming in through large windows. The gourmet kitchen is a chef's delight, equipped with top-of-the-line stainless steel appliances, custom cabinetry, and a center island with seating, perfect for casual dining and entertaining guestsStep outside into the backyard oasis, where you'll find a resort-style swimming pool surrounded by lush foliage, creating a private retreat for outdoor relaxation and recreation.",
+        "price": 50000,
+        "stats": [3,2],
+        "area":2500,
+        "location":"United stats",
+        "facilities": [ "living room","swimming pool","kitchen"],
+        "image": "https://example.com/image.jpg",
+        "view_property_btn": "https://example.com/view_property"
+    },
+    {
+        "id": "1",
+        "title": "Beautiful Family Home",
+        "segment_name": "Single Family Homes",
+        "description": "Nestled in the heart of a serene suburban neighborhood, this exquisite family villa offers the epitome of luxurious living. With a meticulously crafted design and an array of upscale amenities, this home is tailored to meet the needs of modern families seeking comfort, convenience, and elegance. over 5,000 square feet of living space, this stunning residence boasts five spacious bedrooms, each with its own en-suite bathroom, providing ample privacy and comfort for every member of the household. The master suite is a sanctuary of relaxation, featuring a lavish bathroom with a spa-like soaking tub and a private balcony overlooking the lush landscaped gardens.The heart of the home is the expansive open-plan living area, characterized by soaring ceilings, sleek hardwood floors, and an abundance of natural light streaming in through large windows. The gourmet kitchen is a chef's delight, equipped with top-of-the-line stainless steel appliances, custom cabinetry, and a center island with seating, perfect for casual dining and entertaining guestsStep outside into the backyard oasis, where you'll find a resort-style swimming pool surrounded by lush foliage, creating a private retreat for outdoor relaxation and recreation.",
+        "price": 50000,
+        "stats": [3,2],
+        "area":2500,
+        "location":"United stats",
+        "facilities": [ "living room","swimming pool","kitchen"],
+        "image": "https://example.com/image.jpg",
+        "view_property_btn": "https://example.com/view_property"
+    },
+    {
+        "id": "1",
+        "title": "Beautiful Family Home",
+        "segment_name": "Single Family Homes",
+        "description": "Nestled in the heart of a serene suburban neighborhood, this exquisite family villa offers the epitome of luxurious living. With a meticulously crafted design and an array of upscale amenities, this home is tailored to meet the needs of modern families seeking comfort, convenience, and elegance. over 5,000 square feet of living space, this stunning residence boasts five spacious bedrooms, each with its own en-suite bathroom, providing ample privacy and comfort for every member of the household. The master suite is a sanctuary of relaxation, featuring a lavish bathroom with a spa-like soaking tub and a private balcony overlooking the lush landscaped gardens.The heart of the home is the expansive open-plan living area, characterized by soaring ceilings, sleek hardwood floors, and an abundance of natural light streaming in through large windows. The gourmet kitchen is a chef's delight, equipped with top-of-the-line stainless steel appliances, custom cabinetry, and a center island with seating, perfect for casual dining and entertaining guestsStep outside into the backyard oasis, where you'll find a resort-style swimming pool surrounded by lush foliage, creating a private retreat for outdoor relaxation and recreation.",
+        "price": 50000,
+        "stats": [3,2],
+        "area":2500,
+        "location":"United stats",
+        "facilities": [ "living room","swimming pool","kitchen"],
+        "image": "https://example.com/image.jpg",
+        "view_property_btn": "https://example.com/view_property"
+    }
+] 
