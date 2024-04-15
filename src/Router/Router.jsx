@@ -5,7 +5,7 @@ import Root from "../Root";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
-import Register from "../Pages/Register/Register";
+import Register from "../Pages/Register/Register"; 
 
   const router = createBrowserRouter([
     {
@@ -15,7 +15,8 @@ import Register from "../Pages/Register/Register";
       children:[
         {
             path: '/',
-            element: <Home/>
+            element: <Home/>, 
+            loader: ()=> fetch('/public/residantial.json')
         },
         {
           path: '/login',

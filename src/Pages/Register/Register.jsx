@@ -17,7 +17,7 @@ const Register = () => {
                     <span>Email</span>
                     <input className="input input-bordered input-primary w-96" type="email" name="email" placeholder="Your Email..." />
                     <span>Password</span>
-                    <input className="input input-bordered input-primary w-96" type="password" name="password" placeholder="Photo URL..." />
+                    <input className="input input-bordered input-primary w-96" type="password" name="password" placeholder="Password" />
                     <br />
                     <Link><button className="btn w-96 btn-primary">Register</button></Link>
                 </form>
