@@ -4,12 +4,12 @@ import { IoLocationOutline } from "react-icons/io5";
 
 
 
-const ResidentialCard = ({ item }) => {
-    const { id, title, segment_name, description, price, stats, image, facilities, area, location } = item
+const ResidentialCard = ({item}) => {
+    const { id, title, segment_name, description, price, stats, image, facilities, area, location } =item || {}
     console.log(item)
     return (
         <div>
-            <div className="card w-96 bg-base-100 shadow-xl">
+            <div className="card w-96 bg-base-200 shadow-xl">
                 <figure><img className="w-full h-[280px]" src={image} alt="Shoes" /></figure>
                 <div className="card-body text-stone-200">
                     <h2 className="card-title text-2xl">

@@ -1,8 +1,14 @@
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import  { AuthContext } from "../../Provider/AuthProvider"; 
 
 
 const Navbar = () => {
-
+    const {logOut,user} = useContext(AuthContext)
+     
+    const handleLogOut = () =>{
+        logOut() 
+    }
     const navLink = <>
         <Link to="/"><a>Home</a></Link> 
         <Link to='/details/:id'><a>View Details</a></Link>
@@ -29,8 +35,10 @@ const Navbar = () => {
             </div>
             <div className="navbar-end"> 
             <div className="ml-4 sm:flex" >
-                <Link to='/login'><a className="btn">Log In</a></Link>
-                <Link to='/register'><a className="btn ml-2">Sign In</a></Link>
+                {
+                    user ? <button onClick={handleLogOut} className="btn">LogOut</button> : <NavLink to='/login'><button className="btn">Log In</button></NavLink>
+                }
+                <Link to='/register'><a className="btn ml-2">Sign Up</a></Link>
             </div>
             <div className="dropdown dropdown-end ml-2">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">

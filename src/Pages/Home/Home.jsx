@@ -17,7 +17,7 @@ const Home = () => {
             <div className="text-center">
                 <Intro/>
             </div>
-            <div className="grid-cols-3 grid my-12 gap-28">
+            <div className="lg:grid-cols-3 grid lg:my-12 lg:gap-28">
                 {
                     home.map(item=><ResidentialCard item={item} key={item.id}></ResidentialCard>)
                 }
