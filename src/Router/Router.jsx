@@ -6,6 +6,7 @@ import ErrorPage from "../ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register"; 
+import Details from "../Details/Details";
 
   const router = createBrowserRouter([
     {
@@ -25,7 +26,13 @@ import Register from "../Pages/Register/Register";
         {
           path: '/register',
           element: <Register/>
+        },
+        {
+          path: '/details/:id',
+          element: <Details/>,
+          loader: ()=>fetch('/public/residantial.json')
         }
+
       ]
     },
   ]);

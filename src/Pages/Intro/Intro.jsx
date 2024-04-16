@@ -1,5 +1,5 @@
 
-const Intro = () => {
+const Intro = () => { 
     return (
         <div>
             <div className="">
