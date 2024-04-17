@@ -3,6 +3,7 @@ import { createContext, useEffect, useState } from "react";
 import auth from './../firebase/firebaseConfig';
 import { GoogleAuthProvider } from "firebase/auth";
 import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
+import PropTypes from 'prop-types';
 
  
  
@@ -77,4 +78,7 @@ import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
     );
 };
 
+AuthProvider.propTypes ={
+    children: PropTypes.func
+}
 export default AuthProvider;

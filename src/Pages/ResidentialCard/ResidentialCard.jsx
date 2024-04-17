@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { IoLocationOutline } from "react-icons/io5";
+import PropTypes from 'prop-types';
 
 
 
@@ -39,5 +40,8 @@ const ResidentialCard = ({item}) => {
         </div>
     );
 };
+ResidentialCard.propTypes ={
+    item: PropTypes.func
+}
 
 export default ResidentialCard;

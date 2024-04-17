@@ -1,8 +1,23 @@
-# React + Vite
+projects title:
+Tranquil Oasis
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Category :
+and this category is residential.
+and this subcategory is a Single-family homes, townhouses, apartments, student
+housing, senior living communities and vacation rentals .
 
-Currently, two official plugins are available:
+JSON data and then i create a json feck data for my project .
+and creating a lots of routing in this project. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1.Home
+2.ViewDetails ,
+3.UpdateProfile,
+4.About,
+5.Contact,
+6.AuthProvider,
+7.Private Route
+
+and uses web page in this projects,
+react router,react icons,propTypes,and firebase Authentication ,
+because is this projects using register and login and updateProfile,
+

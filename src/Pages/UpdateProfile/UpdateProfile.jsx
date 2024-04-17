@@ -43,12 +43,7 @@ const UpdateProfile = () => {
                                     <span className="label-text">Photo URL</span>
                                 </label>
                                 <input type="text" placeholder="Photo URL..." className="input input-bordered" name="photo" required />
-                            </div>
-                            <div className="form-control"> 
-                                <label className="label">
-                                    <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                                </label>
-                            </div>
+                            </div> 
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary">Update</button>
                             </div>

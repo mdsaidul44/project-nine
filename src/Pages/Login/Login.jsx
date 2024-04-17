@@ -2,14 +2,17 @@ import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
-import { FaRegEye ,FaRegEyeSlash} from "react-icons/fa6"; 
+import { FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
 
 
 
 
 const Login = () => {
-    const { createLogin,googleLogin,user ,githubLogin} = useContext(AuthContext)
+    const { createLogin, googleLogin, user, githubLogin } = useContext(AuthContext)
     const [showPassword, setShowPassword] = useState(false)
+    const [LoginError ,setLoginError] = useState('')
+    const [success ,setSuccess] = useState('') 
+
     const Navigate = useNavigate()
     console.log(user)
 
@@ -17,28 +20,38 @@ const Login = () => {
         e.preventDefault()
         const form = new FormData(e.currentTarget)
         const email = form.get('email')
-        const password = form.get('password') 
+        const password = form.get('password')
 
         createLogin(email, password)
             .then(result => {
-                console.log(result.user) 
+                console.log(result.user)
                 Navigate('/')
+                if(result.user){
+                    setSuccess('user login in successfully')}
+                    
             })
             .catch(error => console.error(error))
+            if(password.length < 6){
+                setLoginError('please your password must be 6 character or longer')
+                return;
+            }else if(!/[a-z]/.test(password)){
+                setLoginError('please must be provide a lower case')
+                return
+            }
     }
 
-    const handleGoogleLogin =() =>{
+    const handleGoogleLogin = () => {
         googleLogin()
-        .then(result =>console.log(result.user))
-        .catch(error => console.log(error))
+            .then(result => console.log(result.user))
+            .catch(error => console.log(error))
     }
-    
-    const handleGithubLogin =() =>{
+
+    const handleGithubLogin = () => {
         githubLogin()
-        .then(result =>console.log(result.user))
-        .catch(error => console.log(error))
+            .then(result => console.log(result.user))
+            .catch(error => console.log(error))
     }
-    
+
     return (
         <div>
             <div>
@@ -63,8 +76,21 @@ const Login = () => {
                                 }
                             </span>
                         </div>
+                        <div className="form-control">
+                            <label className="label">
+                                <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                            </label>
+                        </div>
+                        <div>
+                            {
+                                success && <p>{success}</p>
+                            }
+                            {
+                                LoginError && <p>{LoginError}</p>
+                            }
+                        </div>
                         <br />
-                        <button className="btn w-80 btn-primary">Login</button> 
+                        <button className="btn w-80 btn-primary">Login</button>
                         <p>You do dot have account. Please <Link className="text-emerald-600 font-bold" to='/register'>Register</Link></p>
                     </form>
                     <h1 className="text-center font-semibold mb-6">Continue With</h1>
