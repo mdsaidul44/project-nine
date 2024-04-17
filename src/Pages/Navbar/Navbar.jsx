@@ -10,7 +10,7 @@ const Navbar = () => {
         logOut() 
     }
     const navLink = <>
-        <Link to="/"><a>Home</a></Link> 
+        <Link to="/"><a>Home</a></Link>  
         <Link to='/details/:id'><a>View Details</a></Link>
         <Link to='/about'><a>About</a></Link>
         <Link to='/contact'><a>Contact</a></Link>

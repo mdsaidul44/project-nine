@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { FaRegEye ,FaRegEyeSlash} from "react-icons/fa6"; 
+
+
 
 
 const Register = () => {
     const {createUser} =useContext(AuthContext)
+    const [ showPassword ,setShowPassword] = useState(false)
     const handleGoogleLogin = e =>{
        e.preventDefault()
        const form = new FormData(e.currentTarget)
@@ -36,7 +40,19 @@ const Register = () => {
                     <span>Email</span>
                     <input className="input input-bordered input-primary w-96" type="email" name="email" placeholder="Your Email..." required/>
                     <span>Password</span>
-                    <input className="input input-bordered input-primary w-96" type="password" name="password" placeholder="Password" required />
+                    <div className="flex">
+                    <input 
+                    className="input input-bordered input-primary w-96" 
+                    type={showPassword ? "text" : "password"}
+                    name="password"
+                    placeholder="Password" 
+                    required />
+                    <span className="mt-4 -ml-8" onClick={()=>setShowPassword(!showPassword)}>
+                        {
+                            showPassword ? <FaRegEye/> : <FaRegEyeSlash/>
+                        }
+                    </span>
+                    </div>
                     <br />
                     <button className="btn w-96 btn-primary">Register</button>
                 <p>You have an account? Please <Link className="text-green-500 font-bold" to='/login'>Login</Link></p>
