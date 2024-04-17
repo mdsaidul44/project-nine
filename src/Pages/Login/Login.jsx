@@ -3,6 +3,9 @@ import Navbar from "../Navbar/Navbar";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
+import { toast } from "react-toastify";
+import { FaGoogle } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
 
 
 
@@ -42,13 +45,19 @@ const Login = () => {
 
     const handleGoogleLogin = () => {
         googleLogin()
-            .then(result => console.log(result.user))
+            .then(result =>{
+                console.log(result.user)
+                Navigate('/')
+            }) 
             .catch(error => console.log(error))
     }
 
     const handleGithubLogin = () => {
-        githubLogin()
-            .then(result => console.log(result.user))
+        githubLogin() 
+        .then(result =>{
+            console.log(result.user)
+            Navigate('/')
+        })
             .catch(error => console.log(error))
     }
 
@@ -83,7 +92,7 @@ const Login = () => {
                         </div>
                         <div>
                             {
-                                success && <p>{success}</p>
+                                toast.success && <p>{success}</p>
                             }
                             {
                                 LoginError && <p>{LoginError}</p>
@@ -93,10 +102,16 @@ const Login = () => {
                         <button className="btn w-80 btn-primary">Login</button>
                         <p>You do dot have account. Please <Link className="text-emerald-600 font-bold" to='/register'>Register</Link></p>
                     </form>
-                    <h1 className="text-center font-semibold mb-6">Continue With</h1>
-                    <div className="text-center ">
-                        <button onClick={handleGoogleLogin} className="btn btn-primary mr-10">Google</button>
-                        <button onClick={handleGithubLogin} className="btn btn-primary">Github</button>
+                    <h1 className="text-center  font-semibold mb-6">Continue With</h1>
+                    <div className="text-center flex justify-between mx-32">
+                        <div>
+                        <button onClick={handleGoogleLogin} className=" bg-white w-10 h-10  btn-primary rounded-full"><FaGoogle className="ml-3"/></button>
+                        <p className=" font-semibold">Google</p>
+                        </div>
+                        <div>
+                        <button onClick={handleGithubLogin} className=" bg-white w-10 h-10  btn-primary rounded-full"><FaGithub className="ml-3"/></button>
+                        <p className="font-semibold">Github</p>
+                        </div>
                     </div>
                 </div>
             </div>

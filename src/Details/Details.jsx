@@ -14,7 +14,7 @@ const Details = () => {
     return (
         <div>
             <Navbar />
-            <div className="my-10 ">
+            <div  data-aos="zoom-out" data-aos-duration="1000" className="my-10 ">
                 <div className="hero min-h-screen rounded-xl" style={{ backgroundImage: `url(${image})` }}>
                     <div className="hero-overlay bg-opacity-60"></div>
                     <div className=" hero-content text-center text-neutral-content    ">
@@ -26,7 +26,7 @@ const Details = () => {
                     </div>
                 </div>
             </div>
-            <div className="my-20">
+            <div data-aos="zoom-in" data-aos-duration="1000                                                     " className="my-20">
                 <div className="card lg:card-side bg-base-300 shadow-xl">
                     <figure><img className="rounded w-[500px]" src={image} alt="Album" /></figure>
                     <div className="card-body p-10">

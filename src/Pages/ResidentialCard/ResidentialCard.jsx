@@ -10,7 +10,7 @@ const ResidentialCard = ({item}) => {
     console.log(item)
     return (
         <div>
-            <div className="card w-96 bg-base-200 shadow-xl">
+            <div data-aos="zoom-in" data-aos-duration="1000" className="card w-96 bg-base-200 shadow-xl">
                 <figure><img className="w-full h-[280px]" src={image} alt="Shoes" /></figure>
                 <div className="card-body text-stone-200">
                     <h2 className="card-title text-2xl">

@@ -11,6 +11,9 @@ import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
 import About from "../component/About/About";
 import Contact from "../component/Contact/Contact";
 import PrivateRouter from "./PrivateRouter/PrivateRouter";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 
   const router = createBrowserRouter([
     {
