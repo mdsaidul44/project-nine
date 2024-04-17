@@ -11,7 +11,8 @@ const Navbar = () => {
     }
     const navLink = <>
         <Link to="/"><a>Home</a></Link>  
-        <Link to='/details/:id'><a>View Details</a></Link>
+        <Link to='/details/:id'><a>Show details</a></Link>
+        <Link to="/update"><a>Update Profile</a></Link>  
         <Link to='/about'><a>About</a></Link>
         <Link to='/contact'><a>Contact</a></Link>
     </>
@@ -34,7 +35,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end"> 
-            <div className="ml-4 sm:flex" >
+            <div className="lg:ml-4 flex" >
                 {
                     user ? <button onClick={handleLogOut} className="btn">LogOut</button> : <NavLink to='/login'><button className="btn">Log In</button></NavLink>
                 }
@@ -51,6 +52,7 @@ const Navbar = () => {
                             <a className="justify-between">
                                 Sayeid Mohammad
                             </a>
+                            <Link to='/update'>Update Profile</Link>
                         </li>
                     </ul>
                 </div>

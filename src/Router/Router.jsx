@@ -7,6 +7,10 @@ import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register"; 
 import Details from "../Details/Details";
+import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile"; 
+import About from "../component/About/About";
+import Contact from "../component/Contact/Contact";
+import PrivateRouter from "./PrivateRouter/PrivateRouter";
 
   const router = createBrowserRouter([
     {
@@ -29,8 +33,20 @@ import Details from "../Details/Details";
         },
         {
           path: '/details/:id',
-          element: <Details/>,
+          element: <PrivateRouter><Details/></PrivateRouter>,
           loader: ()=>fetch('/public/residantial.json')
+        },
+        {
+          path: '/update',
+          element: <UpdateProfile/>
+        },
+        {
+          path: '/about',
+          element: <About/>
+        },
+        {
+          path: '/contact',
+          element: <Contact/>
         }
 
       ]
