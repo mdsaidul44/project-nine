@@ -49,8 +49,8 @@ const { setUser ,user} = useContext(AuthContext)
         <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <form onSubmit={handleUpdateProfile} className="card-body">
                 <div className="form-control">
-                    <div>
-                    <img className="mask mask-circle" src={user?.photoURL} />
+                    <div className="">
+                    <img className="mask ml-16 mask-circle" src={user?.photoURL} />
                     </div>
                     <div className="font-bold text-center text-3xl my-6">
                         <h1>Profile</h1>

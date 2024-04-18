@@ -21,3 +21,8 @@ and uses web page in this projects,
 react router,react icons,propTypes,and firebase Authentication ,
 because is this projects using register and login and updateProfile,
 
+dynamic title and more then fremWork added 
+in this projects . 
+ 
+
+ firebase data safely .evn.local file added .in this github ignore this file.
