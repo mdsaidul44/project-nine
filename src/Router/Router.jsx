@@ -6,13 +6,13 @@ import ErrorPage from "../ErrorPage/ErrorPage";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register"; 
-import Details from "../Details/Details";
-import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile"; 
+import Details from "../Details/Details"; 
 import About from "../component/About/About";
 import Contact from "../component/Contact/Contact";
 import PrivateRouter from "./PrivateRouter/PrivateRouter";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import Update from "../Pages/UpdateProfile/Update";
 AOS.init();
 
   const router = createBrowserRouter([
@@ -41,7 +41,7 @@ AOS.init();
         },
         {
           path: '/update',
-          element: <UpdateProfile/>
+          element: <Update/>
         },
         {
           path: '/about',

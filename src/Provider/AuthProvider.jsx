@@ -2,7 +2,7 @@ import { GithubAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged,
 import { createContext, useEffect, useState } from "react";
 import auth from './../firebase/firebaseConfig';
 import { GoogleAuthProvider } from "firebase/auth";
-import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
+// import UpdateProfile from "../Pages/UpdateProfile/UpdateProfile";
 import PropTypes from 'prop-types';
 
  
@@ -16,10 +16,10 @@ import PropTypes from 'prop-types';
      const [loading,setLoading] = useState(true)
      
 
-     const profileUpdate = (name,photo) =>{
-        setLoading(true)
-        return UpdateProfile(auth,name,photo)
-    }
+    //  const profileUpdate = (name,photo) =>{
+    //     setLoading(true)
+    //     return UpdateProfile(auth,name,photo)
+    // }
 
     const googleLogin = () =>{
         setLoading(true) 
@@ -69,7 +69,7 @@ import PropTypes from 'prop-types';
         logOut,
         googleLogin,
         githubLogin,
-        profileUpdate
+        // profileUpdate
     }
     return (
         <AuthContext.Provider value={AuthInfo}>

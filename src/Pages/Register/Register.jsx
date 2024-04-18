@@ -25,6 +25,7 @@ const Register = () => {
 
         createUser(email, password)
 
+  
             .then(result => {
                 console.log(result.user)
                 if (result.user) {
@@ -35,16 +36,19 @@ const Register = () => {
                 e.target.reset()
             })
             .catch(error => console.log(error))
-        if (password.length < 6) {
-            setLoginError('please your password must be 6 character or longer')
-            return;
-        } else if (!/[a-z]/.test(password)) {
-            setLoginError('please must be provide a lower case')
-            return
-        } else if(!/[A-Z]/.test(password)) {
-            setLoginError('please must be provide a lower case')
-            return
-        }
+
+            if (password.length < 6) {
+                setLoginError('please your password must be 6 character or longer')
+                return;
+            } else if (!/[a-z]/.test(password)) {
+                setLoginError('please must be provide a lower case')
+                return
+            } else if(!/[A-Z]/.test(password)) {
+                setLoginError('please must be provide a Upper case')
+                return
+            }
+    
+      
     }
 
 
