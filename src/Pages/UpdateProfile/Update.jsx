@@ -2,14 +2,16 @@
 import Navbar from "../Navbar/Navbar";  
 import auth from "../../firebase/firebaseConfig";
 import { updateProfile } from "firebase/auth";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
+import { AuthContext } from "../../Provider/AuthProvider"; 
 
 
  
 
 
 const Update = () => {
-    
+const { setUser ,user} = useContext(AuthContext) 
+
     useEffect(()=>{
         document.title  = "Home | UpdateProfile"
     },[])
@@ -19,13 +21,16 @@ const Update = () => {
         const form = new FormData(e.currentTarget)
         const name = form.get('name')
         const photo = form.get('photo') 
+        console.log(name,photo)
         
-        updateProfile(auth.user ,{
+        updateProfile(auth.currentUser,{
             displayName : name,
             photoURL :  photo,
+            
         })
-        .then(()=>{
-            console.log('profile updated')
+        .then((result)=>{
+            ('profile updated')
+            setUser({...result,displayName : name, photoURL : photo})
         })
         .catch(()=>{
 
@@ -45,7 +50,7 @@ const Update = () => {
             <form onSubmit={handleUpdateProfile} className="card-body">
                 <div className="form-control">
                     <div>
-                    <img className="mask mask-circle" src="https://i.ibb.co/ZS3Zvq3/adobe-stock-homes-cul-de-sac-scaled-1-63081f559d3de.webp" />
+                    <img className="mask mask-circle" src={user?.photoURL} />
                     </div>
                     <div className="font-bold text-center text-3xl my-6">
                         <h1>Profile</h1>

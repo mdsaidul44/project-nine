@@ -69,6 +69,7 @@ import PropTypes from 'prop-types';
         logOut,
         googleLogin,
         githubLogin,
+        setUser
         // profileUpdate
     }
     return (

@@ -30,7 +30,9 @@ const Login = () => {
                 console.log(result.user)
                 Navigate('/')
                 if(result.user){
-                    setSuccess('user login in successfully')}
+                    setSuccess('user login in successfully')
+                    toast.success('succousfully')
+                }
                     
             })
             .catch(error => console.error(error))
@@ -69,6 +71,9 @@ const Login = () => {
             <div>
                 <Navbar />
             </div>
+            <div>
+           <h1 className="text-4xl mt-10 font-bold text-center text-emerald-600">Login Now</h1>
+           </div>
             <div className="hero min-h-screen rounded-xl ">
                 <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                     <form onSubmit={handleLogin} className="card-body">

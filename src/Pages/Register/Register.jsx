@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
-import { FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
-import { ToastContainer } from "react-toastify";
+import { FaRegEye, FaRegEyeSlash } from "react-icons/fa6"; 
+import { toast } from "react-toastify";
 
 
 
@@ -30,8 +30,9 @@ const Register = () => {
                 console.log(result.user)
                 if (result.user) {
                     setSuccess('user login in successfully')
+                    toast.success('succousfully')
                 }else{
-                  success.toast('succousfully')
+                    toast.error('Something in Wrong')
                 }
                 e.target.reset()
             })
@@ -60,7 +61,10 @@ const Register = () => {
             <div>
                 <Navbar />
             </div>
-            <div className=" bg-gray-900 rounded-xl lg:mx-96 my-10 grid justify-center">
+           <div>
+           <h1 className="text-4xl mt-10 font-bold text-center text-emerald-600">Register Now</h1>
+           </div>
+            <div className=" bg-gray-900 rounded-xl lg:mx-96 my-10 grid justify-center"> 
                 <form onSubmit={handleGoogleLogin} className="card-body">
                     <span>Name</span>
                     <input className="input input-bordered input-primary w-96" type="text" name="name" placeholder="Your Name..." required />
@@ -94,9 +98,7 @@ const Register = () => {
                     <button className="btn w-96 btn-primary">Register</button>
                     <p>You have an account? Please <Link className="text-green-500 font-bold" to='/login'>Login</Link></p>
                 </form>
-            </div>
-            <ToastContainer />
-
+            </div> 
         </div>
     );
 };
