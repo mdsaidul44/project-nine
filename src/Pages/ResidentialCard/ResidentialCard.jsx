@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
 import { IoLocationOutline } from "react-icons/io5";
 import PropTypes from 'prop-types';
+import { useEffect } from "react";
 
 
 
 
 const ResidentialCard = ({item}) => {
+    useEffect(()=>{
+        document.title  = "Home | Cart"
+    },[])
     const { id, title, segment_name, description, price, stats, image, facilities, area, location } =item || {}
     console.log(item)
     return (

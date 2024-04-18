@@ -11,8 +11,7 @@ const Navbar = () => {
         logOut() 
     }
     const navLink = <>
-        <Link to="/"><a>Home</a></Link>  
-        <Link to='/details/:id'><a>Show details</a></Link>
+        <Link to="/"><a>Home</a></Link>   
         <Link to="/update"><a>Update Profile</a></Link>  
         <Link to='/about'><a>About</a></Link>
         <Link to='/contact'><a>Contact</a></Link>

@@ -2,13 +2,17 @@
 import Navbar from "../Navbar/Navbar";  
 import auth from "../../firebase/firebaseConfig";
 import { updateProfile } from "firebase/auth";
+import { useEffect } from "react";
 
 
  
 
 
 const Update = () => {
-
+    
+    useEffect(()=>{
+        document.title  = "Home | UpdateProfile"
+    },[])
     
     const handleUpdateProfile = e =>{
         e.preventDefault()

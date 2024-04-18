@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
 import Navbar from "../../Pages/Navbar/Navbar";
+import { useEffect } from "react";
 
 
 const About = () => {
+
+    useEffect(()=>{
+        document.title  = "Home | About"
+    },[])
+
     return (
         <div>
             <Navbar/>

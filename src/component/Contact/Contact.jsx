@@ -1,8 +1,14 @@
+import { useEffect } from "react";
 import Navbar from "../../Pages/Navbar/Navbar";
 
 
 
 const Contact = () => {
+
+    useEffect(()=>{
+        document.title  = "Home | Contact"
+    },[])
+
     return (
         <div>
             <Navbar />

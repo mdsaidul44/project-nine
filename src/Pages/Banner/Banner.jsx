@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 
 
 
 const Banner = () => {
+    useEffect(()=>{
+        document.title  = "Home | Banner"
+    },[])
     return (
         <div>
             <div className="carousel h-[500px] rounded-xl w-full">

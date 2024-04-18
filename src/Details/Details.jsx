@@ -1,6 +1,7 @@
 import { IoLocationOutline } from "react-icons/io5";
 import Navbar from "../Pages/Navbar/Navbar";
 import { useLoaderData, useParams } from 'react-router-dom';
+import { useEffect } from "react";
 
 
 
@@ -9,7 +10,11 @@ const Details = () => {
     const { id } = useParams()
     const homes = homeDetails.find(home => home.id === id)
     const { title, description, segment_name, image, facilities,price,area,location } = homes
-    console.log(homes)
+    
+
+    useEffect(()=>{
+        document.title  = `Home | ${homes?.segment_name}`
+    },[homes])
 
     return (
         <div>

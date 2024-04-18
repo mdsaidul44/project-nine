@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
 import { ToastContainer } from "react-toastify";
@@ -50,6 +50,9 @@ const Register = () => {
     
       
     }
+    useEffect(()=>{
+        document.title  = "Home | Register"
+    },[])
 
 
     return (

@@ -3,9 +3,14 @@ import Banner from "../Banner/Banner";
 import Navbar from "../Navbar/Navbar";
 import ResidentialCard from "../ResidentialCard/ResidentialCard";
 import Intro from "../Intro/Intro";
+import { useEffect } from "react";
 
 
 const Home = () => {
+
+    useEffect(()=>{
+        document.title  = "Home | Home"
+    },[])
     const home = useLoaderData()  
     return (
 

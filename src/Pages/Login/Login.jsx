@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa6";
 import { toast } from "react-toastify";
@@ -42,6 +42,9 @@ const Login = () => {
                 return
             }
     }
+    useEffect(()=>{
+        document.title  = "Home | login"
+    },[])
 
     const handleGoogleLogin = () => {
         googleLogin()
@@ -66,7 +69,7 @@ const Login = () => {
             <div>
                 <Navbar />
             </div>
-            <div className="hero min-h-screen rounded-xl bg-base-200">
+            <div className="hero min-h-screen rounded-xl ">
                 <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                     <form onSubmit={handleLogin} className="card-body">
                         <span>Email</span>
@@ -102,8 +105,8 @@ const Login = () => {
                         <button className="btn w-80 btn-primary">Login</button>
                         <p>You do dot have account. Please <Link className="text-emerald-600 font-bold" to='/register'>Register</Link></p>
                     </form>
-                    <h1 className="text-center  font-semibold mb-6">Continue With</h1>
-                    <div className="text-center flex justify-between mx-32">
+                    <h1 className="text-center  font-semibold mb-6 underline">Continue With</h1>
+                    <div className="text-center flex justify-between mx-32 mb-4">
                         <div>
                         <button onClick={handleGoogleLogin} className=" bg-white w-10 h-10  btn-primary rounded-full"><FaGoogle className="ml-3"/></button>
                         <p className=" font-semibold">Google</p>
